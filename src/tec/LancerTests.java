@@ -8,10 +8,7 @@ import tec.EtatPassager.Etat;
 
 public class LancerTests {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
+
 
 	@Test
 	public void testAssis(){
@@ -21,21 +18,23 @@ public class LancerTests {
 		assertFalse("Le passager ne doit pas être debout",ep.estDebout());
 	}
 	
+	@Test
 	public void testExterieur(){
 		EtatPassager ep = new EtatPassager(Etat.DEHORS);
 		assertTrue("Le passager doit être à l'exterieur",ep.estExterieur());
 		assertFalse("Le passager ne doit pas être assis",ep.estAssis());
 		assertFalse("Le passager ne doit pas être debout",ep.estDebout());
-	}
+	}	
+	
+	@Test
 	public void testDebout(){
-		
 		EtatPassager ep = new EtatPassager(Etat.DEBOUT);
 		assertFalse("Le passager ne doit pas être a l'extérieur",ep.estExterieur());
 		assertFalse("Le passager ne doit pas être assis",ep.estAssis());
-		assertTrue("Le passager doit être debout",ep.estDebout());
-		
+		assertTrue("Le passager doit être debout",ep.estDebout());	
 	}
 	
+	@Test
 	public void testInterieur(){
 		
 		EtatPassager etatAssis = new EtatPassager(Etat.ASSIS);

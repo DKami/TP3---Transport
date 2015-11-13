@@ -9,6 +9,7 @@ import tec.EtatPassager.Etat;
 public class LancerTests {
 
 
+
 	@Test
 	public void testAssis(){
 		EtatPassager ep = new EtatPassager(Etat.ASSIS);

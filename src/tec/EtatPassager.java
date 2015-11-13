@@ -59,7 +59,7 @@ public class EtatPassager {
    * @return vrai si instanciation avec DEBOUT;
    */
   public boolean estDebout() {
-    return false;
+    return monEtat == Etat.DEBOUT;
   }
 
   /**

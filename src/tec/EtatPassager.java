@@ -41,8 +41,8 @@ public class EtatPassager {
    * @return vrai si instanciation avec DEHORS;
    */
   public boolean estExterieur() {
-	  //return monEtat == Etat.DEHORS;
-	  return monEtat != Etat.ASSIS && monEtat != Etat.DEBOUT;
+	  return monEtat == Etat.DEHORS;
+	  //return monEtat != Etat.ASSIS && monEtat != Etat.DEBOUT;
     
   }
 

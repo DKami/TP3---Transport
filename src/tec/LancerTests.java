@@ -26,7 +26,8 @@ public class LancerTests {
 		assertTrue("Le passager doit être à l'exterieur",ep.estExterieur());
 		assertFalse("Le passager ne doit pas être assis",ep.estAssis());
 		assertFalse("Le passager ne doit pas être debout",ep.estDebout());
-	}	public void testDebout(){
+	}
+	public void testDebout(){
 		
 		EtatPassager ep = new EtatPassager(Etat.DEBOUT);
 		assertFalse("Le passager ne doit pas être a l'extérieur",ep.estExterieur());

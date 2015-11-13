@@ -42,6 +42,7 @@ public class EtatPassager {
    */
   public boolean estExterieur() {
     return monEtat != Etat.ASSIS || monEtat != Etat.DEBOUT;
+    
   }
 
   /**

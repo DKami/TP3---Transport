@@ -21,5 +21,22 @@ public class LancerTests {
 		assertFalse(ep.estDebout());
 	}
 	
+	public void testDebout(){
+		
+		EtatPassager ep = new EtatPassager(Etat.DEBOUT);
+		assertFalse("Le passager ne doit pas être a l'extérieur",ep.estExterieur());
+		assertFalse("Le passager ne doit pas être assis",ep.estAssis());
+		assertTrue("Le passager doit être debout",ep.estDebout());
+		
+	}
 	
+	public void testInterieur(){
+		
+		EtatPassager etatAssis = new EtatPassager(Etat.ASSIS);
+		assertTrue("Le passager assis doit être a l'interieur",etatAssis.estInterieur());
+		EtatPassager etatDebout = new EtatPassager(Etat.DEBOUT);
+		assertTrue("Le passager debout de être a l'intérieur",etatDebout.estInterieur());
+		EtatPassager etatDehors = new EtatPassager(Etat.DEHORS);
+		assertFalse("Le passager dehors ne doit pas être a l'interieur",etatDehors.estInterieur());
+	}
 }

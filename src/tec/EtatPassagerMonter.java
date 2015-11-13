@@ -1,7 +1,7 @@
 package tec;
 
 
-public class EtatPassagerMonter {
+public class EtatPassagerMonter implements IEtatPassager{
   /**
    * D�finit les trois �tats possible d'un passager dans un transport.
    */

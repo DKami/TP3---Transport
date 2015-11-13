@@ -11,7 +11,7 @@ package tec;
  * @author Georgy
  * @since 2007-2008
  **/
-public class EtatPassager {
+public class EtatPassager implements IEtatPassager{
   /**
    * D�finit les trois �tats possible d'un passager dans un transport.
    */

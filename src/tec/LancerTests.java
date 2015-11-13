@@ -21,5 +21,10 @@ public class LancerTests {
 		assertFalse(ep.estDebout());
 	}
 	
-	
+	public void testExterieur(){
+		EtatPassager ep = new EtatPassager(Etat.DEHORS);
+		assertTrue(ep.estExterieur());
+		assertFalse(ep.estAssis());
+		assertFalse(ep.estDebout());
+	}
 }

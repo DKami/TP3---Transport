@@ -16,15 +16,15 @@ public class LancerTests {
 	@Test
 	public void testAssis(){
 		EtatPassager ep = new EtatPassager(Etat.ASSIS);
-		assertFalse(ep.estExterieur());
-		assertTrue(ep.estAssis());
-		assertFalse(ep.estDebout());
+		assertFalse("Le passager ne doit pas être à l'exterieur",ep.estExterieur());
+		assertTrue("Le passager doit être assis",ep.estAssis());
+		assertFalse("Le passager ne doit pas être debout",ep.estDebout());
 	}
 	
 	public void testExterieur(){
 		EtatPassager ep = new EtatPassager(Etat.DEHORS);
-		assertTrue(ep.estExterieur());
-		assertFalse(ep.estAssis());
-		assertFalse(ep.estDebout());
+		assertTrue("Le passager doit être à l'exterieur",ep.estExterieur());
+		assertFalse("Le passager ne doit pas être assis",ep.estAssis());
+		assertFalse("Le passager ne doit pas être debout",ep.estDebout());
 	}
 }

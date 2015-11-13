@@ -9,8 +9,10 @@ import tec.EtatPassager.Etat;
 public class LancerTests {
 
 
+
 	@Test
 	public void testAssis(){
+		System.out.println(".");
 		EtatPassager ep = new EtatPassager(Etat.ASSIS);
 		assertFalse("Le passager ne doit pas être à l'exterieur",ep.estExterieur());
 		assertTrue("Le passager doit être assis",ep.estAssis());
@@ -19,20 +21,16 @@ public class LancerTests {
 	
 	@Test
 	public void testExterieur(){
+		System.out.println(".");
 		EtatPassager ep = new EtatPassager(Etat.DEHORS);
 		assertTrue("Le passager doit être à l'exterieur",ep.estExterieur());
 		assertFalse("Le passager ne doit pas être assis",ep.estAssis());
 		assertFalse("Le passager ne doit pas être debout",ep.estDebout());
-<<<<<<< HEAD
-	}
-	public void testDebout(){
-		
-=======
 	}	
 	
 	@Test
 	public void testDebout(){
->>>>>>> 1592e6a60fc08b5dde648c33c3163561ebc3f3e7
+		System.out.println(".");
 		EtatPassager ep = new EtatPassager(Etat.DEBOUT);
 		assertFalse("Le passager ne doit pas être a l'extérieur",ep.estExterieur());
 		assertFalse("Le passager ne doit pas être assis",ep.estAssis());
@@ -41,12 +39,26 @@ public class LancerTests {
 	
 	@Test
 	public void testInterieur(){
-		
+		System.out.println(".");		
 		EtatPassager etatAssis = new EtatPassager(Etat.ASSIS);
 		assertTrue("Le passager assis doit être a l'interieur",etatAssis.estInterieur());
 		EtatPassager etatDebout = new EtatPassager(Etat.DEBOUT);
 		assertTrue("Le passager debout de être a l'intérieur",etatDebout.estInterieur());
 		EtatPassager etatDehors = new EtatPassager(Etat.DEHORS);
 		assertFalse("Le passager dehors ne doit pas être a l'interieur",etatDehors.estInterieur());
+	}
+	
+	@Test
+	public void toutLesTestReussi(){
+		System.out.println("OK");
+<<<<<<< HEAD
+		//zzzzzzzzzz
+		//zzzzzzzzzz
+		//zzzzzzzzzz
+=======
+		//aaaaaaaaaaaaaaaaaa
+		//aaaaaaaaaaaaaaaaaa
+		//aaaaaaaaaaaaaaaaaa
+>>>>>>> be8dab6ed7867cc7eb9c6cb3471975e316e5d09d
 	}
 }

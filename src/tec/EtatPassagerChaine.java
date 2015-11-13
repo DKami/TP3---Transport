@@ -2,7 +2,7 @@ package tec;
 
 
 
-public class EtatPassagerChaine {
+public class EtatPassagerChaine implements IEtatPassager{
  /**
   * D�finit les trois �tats possible d'un passager dans un transport.
   */

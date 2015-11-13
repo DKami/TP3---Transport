@@ -12,8 +12,8 @@ public class LancerTests {
 
 	@Test
 	public void testAssis(){
-		EtatPassager ep = new EtatPassager(Etat.ASSIS);
 		System.out.println(".");
+		EtatPassager ep = new EtatPassager(Etat.ASSIS);
 		assertFalse("Le passager ne doit pas être à l'exterieur",ep.estExterieur());
 		assertTrue("Le passager doit être assis",ep.estAssis());
 		assertFalse("Le passager ne doit pas être debout",ep.estDebout());
@@ -51,5 +51,8 @@ public class LancerTests {
 	@Test
 	public void toutLesTestReussi(){
 		System.out.println("OK");
+		//zzzzzzzzzz
+		//zzzzzzzzzz
+		//zzzzzzzzzz
 	}
 }

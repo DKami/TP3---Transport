@@ -51,8 +51,5 @@ public class LancerTests {
 	@Test
 	public void toutLesTestReussi(){
 		System.out.println("OK");
-		//zzzzzzzzzz
-		//zzzzzzzzzz
-		//zzzzzzzzzz
 	}
 }

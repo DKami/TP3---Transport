@@ -6,11 +6,6 @@ public class EtatPassagerChaine implements IEtatPassager{
  /**
   * D�finit les trois �tats possible d'un passager dans un transport.
   */
-//public enum Etat {/** passager assis � l'int�rieur */  ASSIS, 
- //                  /** passager debout � l'int�rieur */ DEBOUT,  
-  //                 /** passager � l'ext�rieur */        DEHORS};
-//
- //private final Etat monEtat;
 
 	private String monEtat;
 	

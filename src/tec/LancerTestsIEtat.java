@@ -57,6 +57,12 @@ public class LancerTestsIEtat {
 		assertFalse("Le passager dehors ne doit pas être a l'interieur",etatDehors.estInterieur());
 	}
 	
+	public void creerAssis(){
+		
+	}
+	
+	
+	
 	@Test
 	public void toutLesTestReussi(){
 		System.out.println("OK");

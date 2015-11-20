@@ -21,6 +21,19 @@ public class EtatPassager implements IEtatPassager{
 
   private final Etat monEtat;
 
+  public static EtatPassager creerAssis(){
+	  return new EtatPassager(Etat.ASSIS);
+  }
+
+  public static EtatPassager creerDehors(){
+	  return new EtatPassager(Etat.DEHORS);
+  }
+
+  public static EtatPassager creerDebout(){
+	  return new EtatPassager(Etat.DEBOUT);
+  }
+  
+  
   /**
    * Construit une instance en pr�cisant l'�tat du passager.
    * 
@@ -34,6 +47,9 @@ public class EtatPassager implements IEtatPassager{
      */
   }
 
+  public EtatPassager(){
+	  this(Etat.DEHORS);
+  }
 
   /**
    * Le passager est-il � l'ext�rieur du transport ?

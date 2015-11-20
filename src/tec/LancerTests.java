@@ -12,14 +12,16 @@ public class LancerTests {
 	
 	@Before
 	public void initialiser() throws Exception {
-		etatAssis = new EtatPassager(Etat.ASSIS);
+		/*etatAssis = new EtatPassager(Etat.ASSIS);
 		etatDebout = new EtatPassager(Etat.DEBOUT);
-	    etatDehors = new EtatPassager(Etat.DEHORS);
+	    etatDehors = new EtatPassager(Etat.DEHORS);*/
+		etatAssis = EtatPassager.creerAssis();
+		etatDebout = EtatPassager.creerDebout();
+		etatDehors = EtatPassager.creerDehors();
 	}
 
 	@Test
-	public void testAssis(){
-		
+	public void testAssis(){		
 		System.out.println(".");
 
 		assertFalse("Le passager ne doit pas être à l'exterieur",etatAssis.estExterieur());

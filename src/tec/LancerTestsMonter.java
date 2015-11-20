@@ -9,7 +9,6 @@ import tec.EtatPassagerMonter.Etat;
 public class LancerTestsMonter {
 
 
-
 	@Test
 	public void testAssis(){
 		EtatPassagerMonter ep = new EtatPassagerMonter(Etat.ASSIS);
@@ -51,8 +50,5 @@ public class LancerTestsMonter {
 	@Test
 	public void toutLesTestReussi(){
 		System.out.println("OK");
-		//aaaaaaaaaaaaaaaaaa
-		//aaaaaaaaaaaaaaaaaa
-		//aaaaaaaaaaaaaaaaaa
 	}
 }
